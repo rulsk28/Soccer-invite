@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ti Football Vayb – 3rd Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ========== PAGE 1–3 (INTRO SEQUENCE) ========== -->
+<div class="intro-container" id="intro">
+
+<!-- PAGE 1 -->
+<div class="intro-logo azaman" id="p1">
+  <img src="Azaman Soccer Group.png" alt="Azaman Soccer Vayb">
+</div>
+
+<!-- PAGE 2 — SIMPLE RN + SPONSORS (ORIGINAL STYLE) -->
+<div class="intro-logo rn" id="p2">
+
+  <div class="rn-wrapper">
+
+    <!-- RN Studio in the center -->
+    <img src="cleef.png" class="rn-main" alt="RN Studio">
+
+    <!-- Sponsors underneath in a simple row/grid -->
+    <div class="rn-sponsors">
+      <img src="pic1.png">
+      <img src="pic2.png">
+      <img src="pic3.png">
+      <img src="pic4.png">
+      <img src="pic5.png">
+      <img src="pic6.png">
+    </div>
+
+  </div>
+
+</div>
+
+<!-- PAGE 3 — UNCHANGED -->
+<div class="intro-present" id="p3">
+  <div class="present-text">
+    <h2>PRESENT</h2>
+    <p>Ti Football Vayb — 3rd Edition</p>
+  </div>
+</div>
+
+</div>
+
+<!-- ========== PAGE 4 ========== -->
+<div class="game-page hidden" id="p4">
+
+<header class="hero">
+  <h1>4th of July Weekend</h1>
+  <div class="glow-line"></div>
+</header>
+
+<section class="matchup-poster">
+
+  <div class="poster-card left">
+    <img src="Jolly Minou Fc.png" alt="Jolly Minou FC">
+    <h2>JOLLY MINOU FC</h2>
+  </div>
+
+  <div class="vs-glow">VS</div>
+
+  <div class="poster-card right">
+    <img src="Bel Mwayen Fc.png" alt="Bèl Mwayen FC">
+    <h2>BÈL MWAYEN FC</h2>
+  </div>
+
+</section>
+
+<section class="game">
+  <h3>Play with us to win a prize</h3>
+
+  <div class="questions">
+    <label>Your Name</label>
+    <input type="text" placeholder="Enter your full name">
+
+    <label>Which team will win?</label>
+    <input type="text" placeholder="Enter team name">
+
+    <label>Top goal scorer?</label>
+    <input type="text" placeholder="Enter player name">
+
+    <label>MVP?</label>
+    <input type="text" placeholder="Enter player name">
+
+    <button class="submit-btn" onclick="goToForm()">Submit</button>
+  </div>
+</section>
+
+<footer class="details">
+  <p>📅 July 4th Weekend</p>
+  <p>⏰ 4:30 PM</p>
+  <p>📍 Flamingo W Park, FL</p>
+
+  <p class="powered">Powered by RN Studio</p>
+</footer>
+
+</div>
+
+<script>
+const p1 = document.getElementById("p1");
+const p2 = document.getElementById("p2");
+const p3 = document.getElementById("p3");
+const p4 = document.getElementById("p4");
+const intro = document.getElementById("intro");
+
+p1.classList.add("show");
+
+setTimeout(() => {
+  p1.classList.remove("show");
+  p2.classList.add("show");
+}, 2800);
+
+setTimeout(() => {
+  p2.classList.remove("show");
+  p3.classList.add("show");
+}, 5600);
+
+setTimeout(() => {
+  p3.classList.add("whoosh-out");
+
+  setTimeout(() => {
+    intro.style.display = "none";
+    p4.classList.remove("hidden");
+    p4.classList.add("whoosh-in");
+  }, 900);
+
+}, 8200);
+
+function goToForm() {
+  window.location.href = "https://formspree.io/f/mwvnkvlj";
+}
+</script>
+
+</body>
+</html>
