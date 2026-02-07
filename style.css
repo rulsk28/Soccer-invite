@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ============ INTRO SCREENS ============ */
+/* ===== INTRO PAGES ===== */
 .intro-container {
   position: fixed;
   inset: 0;
@@ -30,36 +30,53 @@ body {
 .intro-logo img {
   max-width: 480px;
   width: 85vw;
-  object-fit: contain;
 }
 
-/* ===== PAGE 2 — SIMPLE ORIGINAL STYLE ===== */
+/* ===== PAGE 2 — RN + SPONSORS ===== */
 .rn-wrapper {
   text-align: center;
 }
 
-/* Main RN logo */
 .rn-main {
   max-width: 360px;
   margin-bottom: 22px;
   filter: drop-shadow(0 0 16px rgba(255,255,255,.8));
 }
 
-/* Sponsors under RN — MADE BIGGER */
 .rn-sponsors {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 22px;            /* slightly more breathing room */
+  gap: 26px;
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* 🔹 THIS IS THE ONLY REAL CHANGE */
+/* CLEAN SPONSOR LOGOS */
 .rn-sponsors img {
-  width: 140px;         /* WAS 110px → NOW 140px */
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(255,255,255,.6);
+  background: white;
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.35);
+}
+
+/* ===== READABLE SPONSOR NAMES ===== */
+.sponsor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.sponsor-item figcaption {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(255,255,255,.7);
 }
 
 /* ===== PAGE 3 ===== */
@@ -210,4 +227,3 @@ body {
 
 .whoosh-out { animation: whooshOut .9s forwards; }
 .whoosh-in { animation: whooshIn .9s forwards; }
-
